@@ -1,10 +1,3 @@
-/**
-* Template Name: MyResume
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -60,7 +53,6 @@
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
-
   /**
    * Scrolls to an element with header offset
    */
@@ -71,7 +63,6 @@
       behavior: 'smooth'
     })
   }
-
   /**
    * Back to top button
    */
@@ -87,7 +78,6 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
   /**
    * Mobile nav toggle
    */
@@ -96,7 +86,6 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
-
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
@@ -151,7 +140,6 @@
       backDelay: 2000
     });
   }
-
   /**
    * Skills animation
    */
@@ -214,7 +202,14 @@
     width: '90%',
     height: '90vh'
   });
-
+  /**
+   * WhatsApp box
+   */
+  const whatsBox = GLightbox({
+    selector: '.whatsbox',
+    width: '90%',
+    height: '90vh'
+  });
   /**
    * Portfolio details slider
    */
